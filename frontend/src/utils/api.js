@@ -2,7 +2,7 @@ import axios from 'axios';
 import useAuthStore from '@/store/authStore';
 
 const api = axios.create({
-  baseURL: 'https://skillsathi.onrender.com/api',
+  baseURL: 'https://skillsathi.onrender.com',
   withCredentials: true,  
 });
 
