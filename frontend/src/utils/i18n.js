@@ -14,13 +14,13 @@ i18n
     resources: {
       en: {
         translation: {
-          welcome: 'Welcome to BharatSkill Connect',
+          welcome: 'Welcome to Skill Connect',
           findGurus: 'Find Gurus',
         }
       },
       hi: {
         translation: {
-          welcome: 'भारतस्किल कनेक्ट में आपका स्वागत है',
+          welcome: 'Skill कनेक्ट में आपका स्वागत है',
           findGurus: 'गुरु खोजें',
         }
       }

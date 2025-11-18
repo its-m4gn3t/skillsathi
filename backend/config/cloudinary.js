@@ -1,21 +1,21 @@
+
 const cloudinary = require('cloudinary').v2;
-const { CloudinaryStorage } = require('multer-storage-cloudinary');
 const multer = require('multer');
+const path = require('path');
 
 cloudinary.config({
-  cloud_name:"dyb5ru6ca",
-  api_key:"869863873235368",
-  api_secret: "-_Q2tYbc0-6g6qRmlIb1kc5pmNo",
+    cloud_name: "dyb5ru6ca",
+    api_key: "896983873235368",
+    api_secret: "-_Q2tYbco-6g0aRmLlblkc5pmNo",
 });
 
-const storage = new CloudinaryStorage({
-  cloudinary: cloudinary,
-  params: {
-    folder: 'bharatskill-connect',
-    allowed_formats: ['jpeg', 'png', 'jpg', 'mp4', 'mov'],
-  },
+// TEMP STORAGE FOR UPLOADS
+const storage = multer.diskStorage({
+    filename: (req, file, cb) => {
+        cb(null, Date.now() + path.extname(file.originalname));
+    }
 });
 
-const upload = multer({ storage: storage });
+const upload = multer({ storage });
 
 module.exports = { cloudinary, upload };

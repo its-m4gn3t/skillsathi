@@ -18,7 +18,7 @@ const app = express();
 
 
 app.use(cors({
-  origin:'https://shiksha-mudraa.onrender.com',
+  origin:'http://localhost:5173',
   credentials: true,
 }));
 app.use(helmet());
@@ -28,7 +28,7 @@ app.use(rateLimiter);
 
 
 app.get('/', (req, res) => {
-    res.send('<h1>BharatSkill Connect API</h1><p>Welcome to the P2P Skill Exchange Platform!</p>');
+    res.send('<h1>Skill Connect API</h1><p>Welcome to the P2P Skill Exchange Platform!</p>');
 });
 
 app.use('/api/auth', authRoutes);

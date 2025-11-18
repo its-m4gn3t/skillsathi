@@ -493,7 +493,7 @@ const Home = () => {
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-8"
           >
             <Sparkles className="w-4 h-4" />
-            <span>India's #1 Skill Exchange Platform</span>
+            <span>Nepals's #1 Skill Exchange Platform</span>
             <motion.div
               className="w-2 h-2 rounded-full bg-primary"
               animate={{ scale: [1, 1.5, 1] }}
@@ -646,7 +646,7 @@ const Home = () => {
               className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent"
               layoutId="section-title"
             >
-              Why Choose SkillBharat?
+              Why Choose SkillShare?
             </motion.h2>
             <motion.p 
               className="text-xl text-muted-foreground max-w-3xl mx-auto"
