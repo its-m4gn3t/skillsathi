@@ -13,7 +13,7 @@ const useSocketStore = create((set) => ({
       return;
     }
 
-    const newSocket = io('http://localhost:5173');
+    const newSocket = io('https://skillsathi-q8qn.onrender.com');
     set({ socket: newSocket });
 
     newSocket.on('connect', () => {
