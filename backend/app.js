@@ -18,7 +18,7 @@ const app = express();
 
 
 app.use(cors({
-  origin:'http://localhost:5173',
+  origin:'https://skillsathi-q8qn.onrender.com',
   credentials: true,
 }));
 app.use(helmet());
